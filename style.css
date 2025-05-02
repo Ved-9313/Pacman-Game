@@ -1,0 +1,61 @@
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background-color: purple;
+}
+
+#game-board {
+    display: grid;
+    grid-template-columns: repeat(11, 30px); /* 11 columns */
+    grid-template-rows: repeat(11, 30px);    /* 11 rows */
+    gap: 1px;
+    background-color: black;
+    padding: 10px;
+    border: 5px solid yellow;
+    margin: auto;
+    width: fit-content;
+}
+
+.wall {
+    width: 100%;
+    height: 100%;
+    background-color: blue;
+}
+
+.dot {
+    width: 30%;
+    height: 30%;
+    background-color: yellow;
+    border-radius: 50%;
+    margin: auto;
+}
+
+.pacman {
+    width: 20px;
+    height: 20px;
+    background-color: yellow;
+    border-radius: 50%;
+    margin: auto;
+}
+
+.ghost {
+    width: 60%;
+    height: 60%;
+    border-radius: 50%;
+    margin: auto;
+}
+
+.ghost1 { background-color: red; }
+.ghost2 { background-color: pink; }
+.ghost3 { background-color: cyan; }
+.ghost4 { background-color: orange; }
+
+.hidden {
+    display: none;
+}
+
+#game-over {
+    font-size: 50px;
+    font-weight: bold;
+    color: red;
+}
